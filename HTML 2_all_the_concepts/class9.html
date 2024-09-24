@@ -1,0 +1,71 @@
+<!-- what is get and post in html forms -->
+<!-- whar is action? -->
+<!-- the action attribute specifies the URL (Uniform Resource Locator) to which the form data will be sent when the form is submitted. -->
+<!-- what is get -->
+<!-- Data is appended to the URL in the form of key-value pairs.
+Visible in the URL.
+Limited data transfer capacity (URL length restrictions).
+Should be used for non-sensitive data. -->
+
+<!-- what is post -->
+<!-- Data is sent in the body of the HTTP request.
+Not visible in the URL.
+Suitable for larger amounts of data.
+Preferred for sensitive data (passwords, etc.). -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Difference between get and post</title>
+</head>
+
+<body>
+    <!-- the form will be submitted on the /signup -->
+    <!-- from where server is going to get information -->
+    <form action="/signup" method="get" target="_blank">
+        <fieldset>
+            <legend>Collecting user Data!</legend>
+            <label for="name">Enter your name: </label>
+            <input type="text" name="name" id="name">
+            <br>
+            <label for="email">Enter your Email:</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="password">Enter your Password:</label>
+            <input type="password" name="password" id="password">
+            <br>
+            <label for="address">Enter your Address: </label>
+            <textarea name="address" id="address" cols="30" rows="10"></textarea>
+            <br>
+            <label for="DOB"> DOB: </label>
+            <input type="date" name="DOB" id="DOB">
+            <br>
+            <label for="">Selelct Gender: </label>
+            <label for="male_gender">Male</label>
+            <input type="radio" name="gender" id="male_gender">
+            <label for="female_gender">Female</label>
+            <input type="radio" name="gender" id="female_gender">
+            <br>
+            <label for="">Select the Cars You like:</label>
+            <br>
+            <label for="lambo">lambo</label>
+            <input type="checkbox" name="lambo" id="lambo">
+            <br>
+            <label for="rangerover">rangerover</label>
+            <input type="checkbox" name="rangerover" id="rangerover">
+            <br>
+            <label for="rollsroyal">rollsroyal</label>
+            <input type="checkbox" name="rollsroyal" id="rollsroyal">
+            <br>
+            <label for="mastang">lambo</label>
+            <input type="checkbox" name="mastang" id="mastang">
+            <br>
+            <input type="submit" name="submit" id="submit">
+        </fieldset>
+    </form>
+</body>
+
+</html>

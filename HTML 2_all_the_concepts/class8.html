@@ -1,0 +1,58 @@
+<!-- forms in html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML | forms</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Collecting user Data!</legend>
+            <!-- id is unique -->
+            <!-- name is a very important attribute is used to collect all information on backend(server) 
+             -->
+            <label for="name">Enter your name: </label>
+            <input type="text" name="name" id="name">
+            <br>
+            <label for="email">Enter your Email:</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="password">Enter your Password:</label>
+            <input type="password" name="password" id="password">
+            <br>
+            <label for="address">Enter your Address: </label>
+            <textarea name="address" id="address" cols="30" rows="10"></textarea>
+            <br>
+            <label for="DOB"> DOB: </label>
+            <input type="date" name="DOB" id="DOB">
+            <br>
+            <label for="">Selelct Gender: </label>
+            <label for="male_gender">Male</label>
+            <input type="radio" name="gender" id="male_gender">
+            <label for="female_gender">Female</label>
+            <input type="radio" name="gender" id="female_gender">
+            <br>
+            <label for="">Select the Cars You like:</label>
+            <br>
+            <label for="lambo">lambo</label>
+            <input type="checkbox" name="lambo" id="lambo">
+            <br>
+            <label for="rangerover">rangerover</label>
+            <input type="checkbox" name="rangerover" id="rangerover">
+            <br>
+            <label for="rollsroyal">rollsroyal</label>
+            <input type="checkbox" name="rollsroyal" id="rollsroyal">
+            <br>
+            <label for="mastang">lambo</label>
+            <input type="checkbox" name="mastang" id="mastang">
+            <br>
+            <input type="submit" name="submit" id="submit">
+        </fieldset>
+    </form>
+</body>
+
+</html>
